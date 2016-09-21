@@ -8,3 +8,4 @@ Este repo possui diversos comandos que utilizo no dia a dia;
 
  - Apagar metodos antigos
  - Incluir repo no GitHub
+ - Teste
