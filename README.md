@@ -1,13 +1,18 @@
 
-### Arquivo feito em AHK
+### Developed in AHK
 
 Este repo possui diversos comandos que utilizo no dia a dia;
 
 
-### TODO
+### Funcionalidades Atuais
+ - Spotify
+ - Volume
+ - dev tools (chrome, sublime)
 
- - Apagar metodos antigos;
- - Criar hotkeys para a tela dgo gitbash(ctrl-v);
+
+### TODO's
+
+ - Criar hotkeys para a tela do gitbash(ctrl-v, activate)
 
 
 License
