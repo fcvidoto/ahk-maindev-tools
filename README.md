@@ -3,7 +3,11 @@
 
 Este repo possui diversos comandos que utilizo no dia a dia;
 
-feel free to explore!
+
+### Todos
+
+ - Apagar metodos antigos
+ - Incluir repo no GitHub
 
 
 License
@@ -11,3 +15,6 @@ License
 
 MIT
 
+
+
+feel free to explore!
