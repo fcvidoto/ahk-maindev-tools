@@ -1,5 +1,5 @@
 
-### Arquivo feito em AHK;
+### Arquivo feito em AHK
 
 Este repo possui diversos comandos que utilizo no dia a dia;
 
@@ -7,7 +7,6 @@ Este repo possui diversos comandos que utilizo no dia a dia;
 ### Todos
 
  - Apagar metodos antigos;
- - Incluir repo no GitHub;
 
 
 License
