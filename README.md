@@ -1,19 +1,16 @@
 
 ### Developed in AHK
 
-Este repo possui diversos comandos que utilizo no dia a dia;
+Este repo possui diversos comandos que utilizo no dia a dia.
 
 
 ### Funcionalidades Atuais
- - Spotify
- - Volume
- - dev tools (chrome, sublime)
+ - Spotify (Volume windows)
+ - dev tools (chrome, sublime, gitbash)
 
 
 ### TODO's
-
- - Criar hotkeys para a tela do gitbash(ctrl-v, activate)
-
+ - none (not yet!)
 
 License
 ----

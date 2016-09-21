@@ -7,6 +7,11 @@ SendMode,Input
 
 ;-------------------------------------------------------------------
 ;ATALHOS DE APPS
+
+#d::
+HotKeysInGITBash.abreGITbash()
+return
+
 ;Abre a tela do Sublime
 #s::
 HotkeysInSublime.AbreSublime()
@@ -28,7 +33,15 @@ HotkeysInChrome.AbreChromeDevTools()
 return
 
 ;-------------------------------------------------------------------
+;GITBASH
+;Cola os valores no gitbash
+$^v::
+HotKeysInGITBash.pasteValues()
+return
+
+;-------------------------------------------------------------------
 ;WINDOWS EXPLORER
+;Cria um novo file no windows
 ^!n::
 HotKeysInWindows.CriaNovoFile()
 return	
@@ -93,7 +106,31 @@ return
 ExitApp
 return
 
-;Todas as hotkeys relacionadas ao Google Chrome
+
+;Relacionadas ao Google Chrome
+class HotKeysInGITBash {
+
+	;Ativa a janela do git bash
+	abreGITbash() {
+
+		if WinExist("ahk_class mintty") {
+			WinActivate
+		}
+	}
+
+	;Cola os valores no gitbash
+	pasteValues() {
+
+		if WinActive("ahk_class mintty") {
+			Send, +{Insert}
+			} else {
+				Send, ^v
+			}
+	}
+}
+
+
+;Google Chrome
 Class HotKeysInChrome{
 	
 	;Ativa o Chrome
@@ -118,7 +155,7 @@ Class HotKeysInChrome{
 	
 }
 
-;Todas as Hotkeys relacionadas ao Internet Explorer
+;Internet Explorer
 Class HotKeysInIE{
 	
 	;Ativa a janela do internet explorer
@@ -208,6 +245,7 @@ class HotKeysInSpotify {
 	
 }
 
+;Sublime
 Class HotkeysInSublime {
 	
 	;Verifica se o sublime está aberto
