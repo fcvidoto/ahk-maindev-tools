@@ -1,16 +1,17 @@
 
-### Developed in AHK
-
-Este repo possui diversos comandos que utilizo no dia a dia.
+#ahk- main-dev-tools
 
 
-### Funcionalidades Atuais
+
+## Developed in AHK
+
+Este repo possui diversos comandos que utilizo no dia a dia, como:
+
  - Spotify (Volume windows)
  - dev tools (chrome, sublime, gitbash)
 
 
-### TODO's
- - none (not yet!)
+
 
 License
 ----
