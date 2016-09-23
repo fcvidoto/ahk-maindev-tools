@@ -212,18 +212,26 @@ class HotKeysInSpotify {
 	}
 	
 	ativaSpotify() {
-		
-		;Se a janela do Spotify estiver ativa, manda pra trás
-		if WinActive("ahk_class SpotifyMainWindow") {
-			this.ocultaSpotify()
-			
-		;Se a janela não estiver ativa, ativa ela
-		} else {			
-			if WinExist("ahk_class SpotifyMainWindow") {
-				WinActivate
-			}	
+
+		;verifica se o spotify existe
+		if WinExist("ahk_class SpotifyMainWindow") {
+
+			;Se a janela do Spotify estiver ativa, oculta
+			if WinActive("ahk_class SpotifyMainWindow") {
+				this.ocultaSpotify()
+				
+			;Se a janela não estiver ativa, a ativa
+			} else {			
+				if WinExist("ahk_class SpotifyMainWindow") {
+					WinActivate
+				}	
+			}
+
+		;se o spotify nao existir, cria um novo
+		} else {
+			run, C:\Users\fcvid\AppData\Roaming\Spotify\Spotify.exe
 		}
-		return
+
 	}
 	
 	ocultaSpotify() {
