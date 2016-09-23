@@ -111,11 +111,19 @@ return
 class HotKeysInGITBash {
 
 	;Ativa a janela do git bash
+	;Detecta se algum bash, 
 	abreGITbash() {
 
 		if WinExist("ahk_class mintty") {
-			WinActivate
+
+			;pega o total de bash e vai ativando
+			WinGet, countBash, Count, ahk_class mintty 
+			Loop, %countBash%
+			{
+				WinActivateBottom, ahk_class mintty
+			}		
 		}
+
 	}
 
 	;Cola os valores no gitbash
