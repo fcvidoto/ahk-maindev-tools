@@ -32,6 +32,10 @@ return
 HotkeysInChrome.AbreChromeDevTools()
 return
 
+;ativa o explorer
+#q::
+HotKeysInWindows.ativaExplorer()
+return
 ;-------------------------------------------------------------------
 ;GITBASH
 ;Cola os valores no gitbash
@@ -302,6 +306,14 @@ Class HotkeysInSublime {
 ;Referente a HotKyes no Windows
 Class HotKeysInWindows{
 	
+	;ativa a janela do explorer
+	ativaExplorer() {
+
+		if WinExist("ahk_class CabinetWClass") {
+			WinActivate
+		}
+	}
+
 	;Cria um arquivo txt no windows explorer
 	CriaNovoFile() {
 		
