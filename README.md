@@ -4,8 +4,8 @@
 
 Este repo possui diversos comandos que utilizo no dia a dia, como:
 
- - Spotify (Volume windows)
- - dev tools (chrome, sublime, gitbash)
+ - Spotify (volume) 
+ - dev tools (devtools, sublime, gitbash)
 
 
 

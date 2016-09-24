@@ -310,7 +310,7 @@ Class HotKeysInWindows{
 	ativaExplorer() {
 
 		if WinExist("ahk_class CabinetWClass") {
-			WinActivate
+			WinActivateBottom, ahk_class CabinetWClass
 		}
 	}
 
